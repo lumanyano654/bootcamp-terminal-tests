@@ -13,10 +13,10 @@ module.exports = function mostProfitableDepartment(department1){
       
       var greaterSales = 0;
     
-      for( x in map){
+      for( let x in map){
          if(map[x] > greaterSales){
+            greaterSales = map[x]
             depName = x
-           greaterSales = map[x]
     
          }
     
